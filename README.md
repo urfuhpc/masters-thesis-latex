@@ -2,6 +2,11 @@
 
 This template was originally used for typesetting a master's thesis at the [Institute of Physics and Technology, UrFU]. However, it is quite universal and can be used for other works.
 
+[![Build Status][travis_ci_badge]][travis_ci_link]
+
+[travis_ci_badge]: https://travis-ci.org/kvkt/masters-thesis-latex.svg
+[travis_ci_link]: https://travis-ci.org/kvkt/masters-thesis-latex
+
 ## Compiling
 
 It has been tested and so far has worked successfully on Fedora 20 (x86_64) with TeX Live 2014. The included Makefile provides the following options:
