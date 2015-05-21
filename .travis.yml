@@ -1,5 +1,7 @@
 script:
   - make latex
+after_failure:
+  - cat masters-thesis.blg
 addons:
   apt:
     packages:
