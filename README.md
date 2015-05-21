@@ -10,7 +10,7 @@ It has been tested and so far has worked successfully on Fedora 20 (x86_64) with
 * `make clean` removes temporary and intermediate files,
 * `make view` opens the resulted document using `xdg-open` on Linux.
 
-## Improvements
+## Compliance
 
 The present template is not officially approved and you may use it on your own risk. It may be useful to rework the title page because at the moment it significantly differs from the proposed one.
 
