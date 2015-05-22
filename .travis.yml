@@ -1,5 +1,5 @@
 before_script:
-  - echo "$pdflatex = 'pdflatex -interaction=nonstopmode';" >~/.latexmkrc
+  - echo "\$pdflatex = 'pdflatex -interaction=nonstopmode';" >~/.latexmkrc
 script:
   - make latex
 after_failure:
