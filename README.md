@@ -4,8 +4,8 @@ This template was originally used for typesetting a master's thesis at the [Inst
 
 [![Build Status][travis_ci_badge]][travis_ci_link]
 
-[travis_ci_badge]: https://travis-ci.org/kvkt/masters-thesis-latex.svg
-[travis_ci_link]: https://travis-ci.org/kvkt/masters-thesis-latex
+[travis_ci_badge]: https://travis-ci.org/urfuhpc/masters-thesis-latex.svg
+[travis_ci_link]: https://travis-ci.org/urfuhpc/masters-thesis-latex
 
 ## Compiling
 
