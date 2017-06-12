@@ -23,6 +23,18 @@ citecolor=black, menucolor=black, filecolor=black
 \titlecontents{chapter}[2.3em]{}{\contentslabel{2.28em}}{\hspace*{-2.28em}}{\titlerule*[1pc]{.}\contentspage}
 \titlecontents{section}[4.6em]{}{\contentslabel{2.28em}}{\hspace*{-2.28em}}{\titlerule*[1pc]{.}\contentspage}
 
+\usepackage{listings}
+\lstset{
+basicstyle=\fontsize{12pt}{14pt}\selectfont\ttfamily,
+inputencoding=utf8,
+extendedchars=\true,
+breaklines=true,
+breakatwhitespace=false,
+showspaces=false,
+showstringspaces=false,
+showtabs=false,
+}
+
 \makeatletter
-\renewcommand{\@biblabel}[1]{#1}
+\renewcommand{\@biblabel}[1]{#1.}
 \makeatother

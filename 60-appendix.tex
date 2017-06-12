@@ -1,0 +1,16 @@
+\renewcommand\thechapter{\CYRA\arabic{chapter}}
+\renewcommand\appendixname{Приложение~А}
+\chapter*{А~~Пример листинга}\label{chap:a}
+\addcontentsline{toc}{chapter}{\appendixname~~Пример листинга}
+\renewcommand\thechapter{\CYRA\arabic{chapter}}
+
+Листинг~\ref{lst:kaggle} содержит секрет первых мест на Kaggle.
+
+\begin{lstlisting}[language=Python,caption={Секрет первых мест на Kaggle},label=lst:kaggle]
+GridSearchCV(estimator=RandomForestClassifier(),
+             param_grid=
+             {
+                 'n_jobs': np.array([1, 2, 3, 4]),
+                 'verbose': np.linspace(0, 50)
+             })
+\end{lstlisting}
