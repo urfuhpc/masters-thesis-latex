@@ -1,14 +1,8 @@
-before_script:
-  - echo "\$pdflatex = 'pdflatex -interaction=nonstopmode';" >~/.latexmkrc
+language: generic
 script:
-  - make latex
+- docker run --rm -it -v $PWD:/srv dustalov/texlive /bin/bash -c 'dnf install -y texlive-was && latexmk -pdf -pdflatex="pdflatex -synctex=1 -halt-on-error %O %S" masters-thesis'
 after_failure:
-  - cat masters-thesis.blg
-addons:
-  apt:
-    packages:
-    - texlive-latex-recommended
-    - texlive-latex-extra
-    - texlive-fonts-recommended
-    - texlive-lang-cyrillic
-    - latexmk
+- cat masters-thesis.log
+- cat masters-thesis.blg
+services:
+- docker
